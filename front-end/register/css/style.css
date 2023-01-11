@@ -1,0 +1,179 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:ital,wght@0,400;0,500;1,300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  width: 18vmin;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 1100px;
+  margin: auto;
+}
+.nav_bar{
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.logo i{
+  margin-right: 10px;
+  color: #5196fe;
+  font-size: 1.8rem;
+}
+
+/* menu list style */
+.menu_list a{
+  margin: 1.2rem;
+  font-size: 14px;
+  color: rgb(82, 79, 79);
+}
+.lg_btn{
+  margin-left: 2rem;
+  padding: 5px 1rem;
+  border-radius: 10px;
+  color: #fff;
+  background: #5196fe;
+  cursor: pointer;
+}
+.menu_list a:hover{
+  color: #000;
+}
+
+/* menu list style */
+.home_section{
+  background-image: url("../../../img/dubai.webp");
+  background-size: cover;
+  height: 90vh;
+}
+
+.overlay{
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.home{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.home h1{
+  font-size: 4rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.home span{
+  color: #5196fe;
+}
+.home_buttons{
+  padding-top: 2rem;
+}
+.home_buttons button{
+  padding: 10px 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.home_buttons button i{
+  margin-right: 10px;
+}
+.home_buttons .btn1{
+  background: #5196fe;
+  color: #fff;
+}
+
+form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(192, 184, 184);
+}
+
+#btn {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #5196fe;
+  background-color: #5196fe;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  background-color: hsl(216, 77%, 80%)!important;
+}
+
+.container1 {
+  border: 2px solid #5196fe;
+  border-radius: 6px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #929ba8;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.8em;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-style: italic;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #5196fe;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin: 5px;
+}
+
+.success {
+  color: green;
+  font-size: 0.8em;
+  margin: 5px;
+}
+
+.hidden {
+  display: none !important;
+}

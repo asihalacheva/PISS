@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script async defer src="javascript/sendData.js"></script>
+   
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav_bar">
+          <div class="logo">
+            <img src="../../img/logo.webp" class="logo" alt="logo">
+          </div>
+  
+            <div class="menu_list">
+              <a href="../../index1.html">Начало</a>
+              <a href="#">Дестинации</a>
+              <a href="#">Конакти</a>
+  
+             <a href="../login/login.html"> <button class="lg_btn">Вход</button></a>
+            </div>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="home_section">
+      <div class="overlay">
+        <div class="container">
+          <div class="home">
+            <div class="container1">
+              <h2>Регистрация</h2>
+              <form method="post">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Потребителско име"
+                />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Парола"
+                />
+                <input type="email" name="email" id="email" placeholder="Имейл" />
+                <input type="text" name="fullName" id="fullName" placeholder="Имена" />
+                <div class="hidden" id="response"></div>
+                <button id="btn">Регистрация</button>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,153 @@
+html {
+  margin: 0;
+  padding: 0;
+  top:0;
+  height: 100%;
+  background-image: url("../../../img/Sofia_University_-_FMI_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  top:0;
+}
+
+h1 {
+  margin-left: 37%;
+  font-style: italic;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#account {
+  width: 50%;
+  min-height: 80%;
+  max-height: 90%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+}
+
+#leftTab {
+  flex: 1 0 30%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#leftTab img {
+  margin-top: 41%;
+}
+
+#logout {
+	margin-top: 100%;
+	cursor: pointer;
+}
+
+.rightTab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 80%;
+  max-width: 66%;
+  margin-top: 10px;
+}
+
+#info {
+  width: 80%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+h4, input {
+  margin: 3px;
+}
+
+input {
+  width: 97%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 50%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(23, 23, 145);
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* forum button */
+#header {
+  left: 0;
+  top: 0;
+	padding: 5px 0px;
+	width: 100vw;
+	height: fit-content;
+	align-items: center;
+  }
+  
+  .logo {
+	width: 15vmin;
+	margin: 0;
+	padding: 0;
+  }
+  
+  /*img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;    
+  }*/
+  
+  #header .cont {
+	background-color:#FFF;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100vw;
+	border-bottom: solid 3px rgba(98, 98, 98, 0.5);
+  }
+
+.top-nav ul {
+	margin-top: 0px;
+	margin-right: 0px;
+	list-style: none;
+  }
+  
+  .top-nav ul li {
+	float: left;
+  }
+  
+  .top-nav ul li a {
+	font-size: 2.5vmin;
+	font-weight: 600;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(55, 50, 55);
+	text-shadow: 2px 2px 2px #0000006e;
+	margin-left: 35px;
+	padding: 7px;
+  }
+  
+  .top-nav ul li a:hover {
+	color: rgb(187, 72, 72);
+	border-bottom: 3px solid rgb(187, 72, 72);
+	transition: all 0.2s ease-in-out;
+	padding-bottom: 14px;
+  }
