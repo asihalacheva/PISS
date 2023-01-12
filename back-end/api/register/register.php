@@ -11,21 +11,24 @@ $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 $email = $data['email'];
 $fullName = $data['fullName'];
 
-
 try {
     $db = new DB();
     $connection = $db->getConnection();
-
-    $query = "SELECT * 
-               FROM users 
-               WHERE username = :username";
-
-    $statement = $connection->prepare($query);
-    $statement->execute(["username" => $username]);
-
-    if ($statement->rowCount() != 0) {
+    
+    $queryUN = "SELECT * FROM users WHERE username = :username";
+    $statement1 = $connection->prepare($queryUN);
+    $statement1->execute(["username" => $username]);
+    if ($statement1->rowCount() > 0) {
         http_response_code(400);
         exit(json_encode(["status" => "error", "message" => "Потребител с такова потребителско име вече съществува!"], JSON_UNESCAPED_UNICODE));
+    }
+	
+	$queryEm = "SELECT * FROM users WHERE email = :email";
+    $statement2 = $connection->prepare($queryEm);
+    $statement2->execute(["email" => $email]);
+    if ($statement2->rowCount() > 0) {
+        http_response_code(400);
+        exit(json_encode(["status" => "error", "message" => "Вече съществува профил с този email!"], JSON_UNESCAPED_UNICODE));
     }
 } catch (PDOException $e) {
     http_response_code(500);
@@ -33,7 +36,7 @@ try {
 }
 
 try {
-    $insert = "INSERT INTO users (username, password, full_name, email)
+    $insert = "INSERT INTO users (username, password, full_name, email) 
                       VALUES (:username, :password, :full_name, :email)";
 
     $statement = $connection->prepare($insert);
