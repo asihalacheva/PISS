@@ -10,10 +10,55 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  height: 100%;
+  background: rgb(223, 223, 223);
+}
+
+div.mainC {
+  background: rgb(223, 223, 223);
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+div.rm {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 10%;
+}
+
+div.flt {
+  width: 260px;
+}
+
+div.offs {
+  margin-bottom: 7%;
+}
+
+div.off {
+  width: 380px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+div.boxx {
+  width: 365px;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
 .logo {
   width: 18vmin;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
 }
 
 .containerH{
@@ -26,16 +71,12 @@
   align-items: center;
   justify-content: space-between;
 }
-.logo{
-  display: flex;
-  align-items: center;
-  font-size: 1.4rem;
-}
+/*
 .logo i{
   margin-right: 10px;
   color: #5196fe;
   font-size: 1.8rem;
-}
+}*/
 
 /* menu list style */
 .menu_list a{
@@ -57,7 +98,7 @@
 }
 
 /* Home section style */
-.home_section{
+/*.home_section{
   background-image: url("../img/venezia.jpg");
   background-size: cover;
   height: 90vh;
@@ -99,10 +140,10 @@
 .home_buttons .btn1{
   background: #5196fe;
   color: #fff;
-}
+}*/
 
 /* services */
-.services{
+/*.services{
   background: rgb(223, 223, 223);
   padding: 2rem 1rem;
 }
@@ -146,21 +187,4 @@
 }
 .box:hover, .br{
   border: 2px solid #5196fe;
-}
-
-/* nav 
-nav {
-	position: fixed;
-	height: 70%;
-	width: 17%;
-	top: 0%;
-	left: 2%;
-	padding-right: 2%;
-	border-right: solid 1px;
 }*/
-
-main {
-	/*margin-left: 30%;
-	margin-right: 4%;
-	justify-content: center;*/
-}
