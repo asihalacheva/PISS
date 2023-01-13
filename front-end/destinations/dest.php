@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinations</title>
-	<link href="dest.css" rel="stylesheet">
+    <link href="dest.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -17,7 +17,6 @@
         </div>
 
           <div class="menu_list">
-            <a href="../../index1.html">Начало</a>
             <a href="#">Контакти</a>
 
            <a href="./front-end/login/login.html"> <button class="lg_btn">Вход</button></a>
@@ -25,10 +24,10 @@
       </div>
     </div>
     </header>
-    <div class="container mainC">
-        <div class="row">
-			<!-- Destinations List  -->
-            <div class="col-md-3">
+    <div class="mainC">
+        <div class="row rm">
+	    <!-- Destinations List  -->
+            <div class="col-md-3 flt">
                 <form action="" method="GET">
                     <div class="card shadow mt-3">
                         <div class="card-header">
@@ -76,10 +75,10 @@
 
             <!-- Offers -->
             <div class="col-md-9 mt-3">
-                <div class="card ">
+                <div class="card offs">
                     <div class="card-body row">
                         <?php
-						  if(isset($_GET['dest']))
+			  if(isset($_GET['dest']))
                             {
                                 $destschecked = [];
                                 $destschecked = $_GET['dest'];
@@ -91,12 +90,12 @@
                                     {
                                         foreach($dests_run as $destnames) :
                                             ?>
-                                                <div class="col-md-4 mt-3">
-                                                    <div class="border p-2">
-														<div><img src="<?php echo $destnames['img']; ?>" alt="img" height=200 width=240/></div>
-                                                        <h6><?= $destnames['name_dest']; ?></h6>
-														<div>Цена: <?= $destnames['price']; ?> лв.</div>
-														<div>Дата: <?= $destnames['departure']; ?></div>
+                                                <div class="col-md-4 off">
+                                                    <div class="border p-2 boxx">
+							<div><img src="<?php echo $destnames['img']; ?>" alt="img" height=240 width=300/></div>
+                                                        <h5><?= $destnames['name_dest']; ?></h5>
+							<div>Цена: <?= $destnames['price']; ?> лв.</div>
+							<div>Дата: <?= $destnames['departure']; ?></div>
                                                     </div>
                                                 </div>
                                             <?php
@@ -106,18 +105,18 @@
                             }
                             else
                             {
-								$dests = "SELECT * FROM destinations";
+				$dests = "SELECT * FROM destinations";
                                 $dests_run = mysqli_query($con, $dests);
                                 if(mysqli_num_rows($dests_run) > 0)
                                 {
                                     foreach($dests_run as $destnames) :
                                         ?>
-                                            <div class="col-md-4 mt-3">
-                                                <div class="border p-2">
-													<div><img src="<?php echo $destnames['img']; ?>" alt="img" height=200 width=240/></div>
-                                                    <h6><?= $destnames['name_dest']; ?></h6>
-													<div>Цена: <?= $destnames['price']; ?> лв.</div>
-													<div>Дата: <?= $destnames['departure']; ?></div>
+                                            <div class="col-md-4 off">
+                                                <div class="border p-2 boxx">
+						    <div><img src="<?php echo $destnames['img']; ?>" alt="img" height=240 width=300/></div>
+                                                    <h5><?= $destnames['name_dest']; ?></h5>
+						    <div>Цена: <?= $destnames['price']; ?> лв.</div>
+						    <div>Дата: <?= $destnames['departure']; ?></div>
                                                 </div>
                                             </div>
                                         <?php
