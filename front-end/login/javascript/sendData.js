@@ -51,7 +51,7 @@
             responseMsg.innerHTML = "Успешно влязохте!";
             responseMsg.classList.remove("hidden");
             responseMsg.classList.add("success");
-            window.location.href = "../../index1.html";
+            window.location.href = "../../front-end/destinations/dest.php";
           }
         })
         .catch((err) => {
