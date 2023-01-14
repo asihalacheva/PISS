@@ -32,6 +32,10 @@ div.flt {
   width: 260px;
 }
 
+div.prInput {
+  width: 77px;
+}
+
 div.offs {
   margin-bottom: 7%;
 }
@@ -71,12 +75,6 @@ div.boxx {
   align-items: center;
   justify-content: space-between;
 }
-/*
-.logo i{
-  margin-right: 10px;
-  color: #5196fe;
-  font-size: 1.8rem;
-}*/
 
 /* menu list style */
 .menu_list a{
@@ -97,94 +95,20 @@ div.boxx {
   color: #000;
 }
 
-/* Home section style */
-/*.home_section{
-  background-image: url("../img/venezia.jpg");
-  background-size: cover;
-  height: 90vh;
-}
-
-.overlay{
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-}
-.home{
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.home h1{
-  font-size: 4rem;
-  color: #fff;
-  text-transform: capitalize;
-}
-.home span{
-  color: #5196fe;
-}
-.home_buttons{
-  padding-top: 2rem;
-}
-.home_buttons button{
-  padding: 10px 1rem;
-  border-radius: 10px;
-  margin: 1rem;
-  cursor: pointer;
-  font-size: 1rem;
-}
-.home_buttons button i{
-  margin-right: 10px;
-}
-.home_buttons .btn1{
+h5>a.navTop {
   background: #5196fe;
-  color: #fff;
-}*/
+  margin-left: 100%;
+  text-align: right;
+  font-size: 20px;
+  margin-bottom: 7%;
+  width: 30px;
+  
+}
 
-/* services */
-/*.services{
-  background: rgb(223, 223, 223);
-  padding: 2rem 1rem;
-}
-.services .title{
-  text-align: center;
-}
-.title h1{
-  font-size: 2rem;
-}
-.title span{
-  color: #5196fe;
-}
-.title .slogan{
-  font-size: 1rem;
-  color: gray;
-}
-.services_boxes{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-}
-.box{
-  width: 320px;
-  background: #fff;
-  padding: 2rem;
-  margin: 1rem 2rem;
-  text-align: center;
+a.navTop {
+  border: solid 1px;
   border-radius: 10px;
-  border: 2px solid transparent;
-  box-shadow: 1px 30px 20px rgba(0, 0, 0, 0.1);
+  padding: 7px;
+  text-decoration: none;
+  color: white;
 }
-.box i{
-  font-size: 4rem;
-  color: #5196fe;
-  margin-bottom: 2rem;
-}
-.box p{
-  color: gray;
-  margin-top: 10px;
-}
-.box:hover, .br{
-  border: 2px solid #5196fe;
-}*/
