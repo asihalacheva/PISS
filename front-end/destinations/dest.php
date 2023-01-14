@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header href="#top">
     <div class="containerH">
       <div class="nav_bar">
         <div class="logo">
@@ -17,8 +17,6 @@
         </div>
 
           <div class="menu_list">
-            <a href="#">Контакти</a>
-
            <a href="./front-end/login/login.html"> <button class="lg_btn">Вход</button></a>
           </div>
       </div>
@@ -69,6 +67,21 @@
                                 }
                             ?>
                         </div>
+			    
+			<div class="card-body">
+				<h6>Цена</h6>
+                            	<hr>
+                            	<div class="">
+					<div class="col-md-4 prInput">
+						<label for="">От:</label>
+						<input type="text" name="start_price" value="<?php if(isset($_GET['start_price'])) { echo $_GET['start_price']; } ?>" class="form-control">
+					</div>
+					<div class="col-md-4 prInput">
+						<label for="">До:</label>
+						<input type="text" name="end_price" value="<?php if(isset($_GET['end_price'])) { echo $_GET['end_price']; } ?>" class="form-control">
+					</div>
+                            	</div>                    
+                        </div>    
                     </div>
                 </form>
             </div>
@@ -103,11 +116,37 @@
                                     }
                                 }
                             }
-                            else
+                            else if(isset($_GET['start_price']) && isset($_GET['end_price']))
+			    {
+				$startprice = $_GET['start_price'];
+				$endprice = $_GET['end_price'];
+
+				$price_query = "SELECT * FROM destinations WHERE price BETWEEN $startprice AND $endprice";
+							
+				$price_query_run = mysqli_query($con, $price_query);
+
+				if($price_query_run)	
+				{
+				    foreach($price_query_run as $offers)
+				    {
+				    ?>
+					<div class="col-md-4 off">
+						<div class="border p-2 boxx">
+							<div><img src="<?= $offers['img']; ?>" alt="img" height=240 width=300/></div>
+							<h5> <?= $offers['name_dest']; ?></h5>
+							<div>Цена: <?= $offers['price']; ?> лв.</div>
+							<div>Дата: <?= $offers['departure']; ?></div>
+						</div>
+					</div>
+				    <?php
+				    }
+			        }
+			    }
+			    else
                             {
 				$dests = "SELECT * FROM destinations";
                                 $dests_run = mysqli_query($con, $dests);
-                                if(mysqli_num_rows($dests_run) > 0)
+                                if($dests_run)
                                 {
                                     foreach($dests_run as $destnames) :
                                         ?>
@@ -131,6 +170,7 @@
                     </div>
                 </div>
             </div>
+	    <h5 class="navTop"><a class="navTop" href="#top"> &#x1F861; </a></h5>
         </div>
     </div>
 
