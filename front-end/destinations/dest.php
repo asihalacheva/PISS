@@ -10,7 +10,7 @@
     <script async defer src="../profile/javascript/logout.js"></script>
 </head>
 <body>
-    <header href="#top">
+    <header>
     <div class="containerH">
       <div class="nav_bar">
         <div class="logo">
@@ -172,7 +172,6 @@
                     </div>
                 </div>
             </div>
-	    <h5 class="navTop"><a class="navTop" href="#top"> &#x1F861; </a></h5>
         </div>
     </div>
 
