@@ -68,25 +68,34 @@
                                     echo "Няма намерени дестинации";
                                 }
                             ?>
-                        </div>
-			    
-			<div class="card-body">
-				<h6>Цена</h6>
-                            	<hr>
-                            	<div class="">
-					<div class="col-md-4 prInput">
-						<label for="">От:</label>
-						<input type="text" name="start_price" value="<?php if(isset($_GET['start_price'])) { echo $_GET['start_price']; } ?>" class="form-control">
-					</div>
-					<div class="col-md-4 prInput">
-						<label for="">До:</label>
-						<input type="text" name="end_price" value="<?php if(isset($_GET['end_price'])) { echo $_GET['end_price']; } ?>" class="form-control">
-					</div>
-                            	</div>                    
-                        </div>    
-                    </div>
-                </form>
-            </div>
+			    </div>
+			</div>
+		</form>
+		    
+	    	<form action="" method="GET">
+            		<div class="card shadow mt-3">
+                		<div class="card-header">
+                        		<h5>Филтър
+                                		<button type="submit" class="btn btn-primary btn-sm float-end">Търси</button>
+                            		</h5>
+                        	</div>
+				<div class="card-body">
+					<h6>Цена</h6>
+					<hr>
+                        		<div class="">
+						<div class="col-md-4 prInput">
+							<label for="">От:</label>
+							<input type="text" name="start_price" value="<?php if(isset($_GET['start_price'])) { echo $_GET['start_price']; } ?>" class="form-control">
+						</div>
+						<div class="col-md-4 prInput">
+							<label for="">До:</label>
+							<input type="text" name="end_price" value="<?php if(isset($_GET['end_price'])) { echo $_GET['end_price']; } ?>" class="form-control">
+						</div>
+                            		</div>                    
+                        	</div>
+			</div>
+	    	</form>
+	    </div>
 
             <!-- Offers -->
             <div class="col-md-9 mt-3">
