@@ -7,6 +7,7 @@
     <title>Destinations</title>
     <link href="dest.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script async defer src="../profile/javascript/logout.js"></script>
 </head>
 <body>
     <header href="#top">
@@ -17,7 +18,8 @@
         </div>
 
           <div class="menu_list">
-           <a href="./front-end/login/login.html"> <button class="lg_btn">Вход</button></a>
+            <a href="./dest.php">Дестинации</a>
+           <button id="logout" class="lg_btn">Изход</button>
           </div>
       </div>
     </div>

@@ -18,8 +18,6 @@
 
           <div class="menu_list">
             <a href="./index1.php">Начало</a>
-            <a href="./front-end/destinations/dest.php">Дестинации</a>
-
            <a href="./front-end/login/login.html"> <button class="lg_btn">Вход</button></a>
           </div>
       </div>
@@ -31,9 +29,6 @@
       <div class="container">
         <div class="home">
           <h1><span>Система</span> за <br>туристически <span>услуги</span></h1>
-          <div class="home_buttons">
-            <button class="btn1">Дестинации</button>
-          </div>
         </div>
       </div>
     </div>

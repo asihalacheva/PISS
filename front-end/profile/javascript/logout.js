@@ -12,7 +12,7 @@
         } else {
 	  localStorage.removeItem("username");
           localStorage.removeItem("threads");
-          window.location.href = "../../index.html";
+          window.location.href = "../../index1.php";
         }
         })
         .catch((error) => {
