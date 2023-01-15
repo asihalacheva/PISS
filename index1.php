@@ -27,7 +27,9 @@
     <div class="overlay">
       <div class="container">
         <div class="home">
-          <h1><span>Система</span> за <br>туристически <span>оферти</span></h1>
+          <h1><span>Trip</span>Help</h1>
+		      <br>
+		      <h2><span>Система</span> за туристически <span>оферти</span></h2>
         </div>
       </div>
     </div>
