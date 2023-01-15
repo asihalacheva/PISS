@@ -10,6 +10,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 .logo {
   width: 18vmin;
   margin: 0;
@@ -21,7 +25,7 @@
   margin: auto;
 }
 .nav_bar{
-  padding: 15px;
+  padding: 7px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,16 +44,17 @@
 /* menu list style */
 .menu_list a{
   margin: 1.2rem;
-  font-size: 14px;
+  font-size: 17px;
   color: rgb(82, 79, 79);
 }
 .lg_btn{
   margin-left: 2rem;
-  padding: 5px 1rem;
+  padding: 7px 2rem;
   border-radius: 10px;
   color: #fff;
   background: #5196fe;
   cursor: pointer;
+  font-size: 17px;
 }
 .menu_list a:hover{
   color: #000;
@@ -185,4 +190,3 @@
   cursor: pointer;
   font-size: 20px;
 }
-
