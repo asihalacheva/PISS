@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дестинации</title>
+    <title>TripHelp - Оферти</title>
     <link href="dest.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script async defer src="../profile/javascript/logout.js"></script>
@@ -16,7 +16,7 @@
         <div class="logo">
           <img src="../../img/logo.webp" class="logo" alt="logo">
         </div>
-	<h1><b>Дестинации</b></h1>
+	<h1><b>Оферти</b></h1>
           <div class="menu_list">
            <button id="logout" class="lg_btn">Изход</button>
           </div>
