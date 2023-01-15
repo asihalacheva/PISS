@@ -17,7 +17,6 @@
         </div>
 
           <div class="menu_list">
-            <a href="./index1.php">Начало</a>
            <a href="./front-end/login/login.html"> <button class="lg_btn">Вход</button></a>
           </div>
       </div>
@@ -60,17 +59,17 @@
                               <section class="services">
                               <div class="services_boxes">
                                <div class="box">
-                               <div><img src="<?php echo $destnames['img']; ?>" alt="img" height=240px width=250px/></div>
-                              <h4><?= $destnames['name_dest']; ?></h4>
-                              <p>Цени от: <?= $destnames['price']; ?></p>
+                               <div><img src="<?php echo $destnames['img']; ?>" alt="img" height=240px width=300px/></div>
+                              <h3><?= $destnames['name_dest']; ?></h3>
+                              <p>Цени от: <?= $destnames['price']; ?> лв.</p>
                               <p>Дати на заминаване: <?= $destnames['departure']; ?></p>
                               </div>
                               </section>
                               <?php
                               endforeach;
                            }
-                           else
-                           echo "Няма намерени резултати...";
+                           else {
+                           echo "Няма намерени резултати..."; }
                   }            
               ?>
 
@@ -83,26 +82,26 @@
       <div class="services_boxes">
 
         <div class="box">
-          <div><img src="./img/dubai.webp" alt="img" height=240px width=250px /></div>
-          <h4>Дубай</h4>
-          <p>Цени от: 500лв</p>
-          <p>Дати на заминаване: 2023-01-26; 2023-02-18</p>
+          <div><img src="./img/dubai.webp" alt="img" height=240px width=300px /></div>
+          <h3>Дубай</h3>
+          <p>Цени от: 500 лв.</p>
+          <p>Дати на заминаване: <br>2023-01-26; 2023-02-18</p>
         </div>
         
 
         <div class="box">
-          <div><img src="./img/malta.jpg" alt="img" height=240px width=250px /></div>
-          <h4>Малта</h4>
-          <p>Цени от: 750лв</p>
-          <p>Дати на заминаване: 2023-04-10; 2023-05-16</p>
+          <div><img src="./img/malta.jpg" alt="img" height=240px width=300px /></div>
+          <h3>Малта</h3>
+          <p>Цени от: 750 лв.</p>
+          <p>Дати на заминаване: <br>2023-04-10; 2023-05-16</p>
         </div>
        
 
         <div class="box">
-          <div><img src="./img/venezia.jpg" alt="img" height=240px width=250px /></div>
-          <h4>Венеция</h4>
-          <p>Цени от: 320лв</p>
-          <p>Дати на заминаване: 2023-02-21; 2023-03-11</p>
+          <div><img src="./img/venezia.jpg" alt="img" height=240px width=300px /></div>
+          <h3>Венеция</h3>
+          <p>Цени от: 320 лв.</p>
+          <p>Дати на заминаване: <br>2023-02-21; 2023-03-11</p>
         </div>
 
         </div>
