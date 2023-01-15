@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8" />
-  <title>TripHelp</title>
+  <title>TripHelp - Начало</title>
   <link href="css/home1_style.css" rel="stylesheet"> 
 </head>
 <body>
