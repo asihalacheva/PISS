@@ -18,6 +18,9 @@ html {
   width: 18vmin;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
 }
 
 .container{
@@ -29,11 +32,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.logo{
-  display: flex;
-  align-items: center;
-  font-size: 1.4rem;
 }
 .logo i{
   margin-right: 10px;
@@ -80,7 +78,12 @@ html {
   text-align: center;
 }
 .home h1{
-  font-size: 4rem;
+  font-size: 7rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.home h2{
+  font-size: 3rem;
   color: #fff;
   text-transform: capitalize;
 }
