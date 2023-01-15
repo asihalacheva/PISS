@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8" />
-  <title>Travel system</title>
+  <title>TripHelp</title>
   <link href="css/home1_style.css" rel="stylesheet"> 
 </head>
 <body>
@@ -27,7 +27,7 @@
     <div class="overlay">
       <div class="container">
         <div class="home">
-          <h1><span>Система</span> за <br>туристически <span>услуги</span></h1>
+          <h1><span>Система</span> за <br>туристически <span>оферти</span></h1>
         </div>
       </div>
     </div>
