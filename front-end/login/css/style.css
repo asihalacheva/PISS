@@ -10,10 +10,17 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  height: 100%;
+}
+
 .logo {
   width: 18vmin;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
 }
 
 .container{
@@ -21,15 +28,10 @@
   margin: auto;
 }
 .nav_bar{
-  padding: 15px;
+  padding: 7px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.logo{
-  display: flex;
-  align-items: center;
-  font-size: 1.4rem;
 }
 .logo i{
   margin-right: 10px;
@@ -40,16 +42,17 @@
 /* menu list style */
 .menu_list a{
   margin: 1.2rem;
-  font-size: 14px;
+  font-size: 17px;
   color: rgb(82, 79, 79);
 }
 .lg_btn{
   margin-left: 2rem;
-  padding: 5px 1rem;
+  padding: 7px 2rem;
   border-radius: 10px;
   color: #fff;
   background: #5196fe;
   cursor: pointer;
+  font-size: 17px;
 }
 .menu_list a:hover{
   color: #000;
@@ -59,15 +62,15 @@
 .home_section{
   background-image: url("../../../img/dubai.webp");
   background-size: cover;
-  height: 90vh;
+  height: 85vh;
 }
 
 .overlay{
-  height: 100%;
+  height: 85vh;
   background: rgba(0, 0, 0, 0.6);
 }
 .home{
-  height: 90vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,8 +103,6 @@
   color: #fff;
 }
 
-
-
 form {
   width: 70%;
   display: flex;
@@ -119,27 +120,16 @@ input {
   border: 1px solid rgb(192, 184, 184);
 }
 
-#login {
+#login, #register {
   width: 40%;
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #5196fe;
-  background-color: hsl(216, 77%, 80%);
+  border: 1px solid #e3eeff;
+  background-color: #5196fe;
   color: white;
   font-weight: bold;
   cursor: pointer;
-}
-
-#register {
-  width: 40%;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #5196fe;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: #5196fe;
 }
 
 #buttons {
@@ -155,16 +145,12 @@ button {
   transition: all 0.4s ease-in-out;
 }
 
-#login:hover {
-  background-color: #5196fe !important;
-}
-
-#register:hover {
+#login:hover, #register:hover {
   background-color: hsl(216, 77%, 80%) !important;
 }
 
 .container1 {
-  border: 2px solid #e3eeff;
+  border: 2px solid #5196fe;
   border-radius: 6px;
   width: 40%;
   display: flex;
@@ -193,19 +179,16 @@ input:focus {
 
 .error {
   color: red;
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin: 5px;
 }
 
 .success {
   color: green;
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin: 5px;
 }
 
 .hidden {
   display: none !important;
 }
-
-
-
