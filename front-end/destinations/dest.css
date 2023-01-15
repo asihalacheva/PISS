@@ -50,10 +50,15 @@ div.off {
 
 div.boxx {
   width: 365px;
+  padding: 1rem;
   background: #fff;
   text-align: center;
   border-radius: 10px;
-  border: 2px solid transparent;
+  border: 1px solid;
+}
+
+div.boxx:hover {
+  border: 2px solid #5196fe;
 }
 
 .logo {
@@ -63,6 +68,10 @@ div.boxx {
   display: flex;
   align-items: center;
   font-size: 1.4rem;
+}
+
+h1 {
+  color: #5196fe;
 }
 
 .containerH{
